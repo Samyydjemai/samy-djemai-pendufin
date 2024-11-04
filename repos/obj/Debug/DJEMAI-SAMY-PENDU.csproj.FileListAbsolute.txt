@@ -1,0 +1,15 @@
+C:\Users\SAMY\source\repos\bin\Debug\DJEMAI-SAMY-PENDU.exe.config
+C:\Users\SAMY\source\repos\bin\Debug\DJEMAI-SAMY-PENDU.exe
+C:\Users\SAMY\source\repos\bin\Debug\DJEMAI-SAMY-PENDU.pdb
+C:\Users\SAMY\source\repos\obj\Debug\DJEMAI-SAMY-PENDU.csproj.AssemblyReference.cache
+C:\Users\SAMY\source\repos\obj\Debug\MainWindow.g.cs
+C:\Users\SAMY\source\repos\obj\Debug\App.g.cs
+C:\Users\SAMY\source\repos\obj\Debug\DJEMAI-SAMY-PENDU_MarkupCompile.cache
+C:\Users\SAMY\source\repos\obj\Debug\DJEMAI-SAMY-PENDU_MarkupCompile.lref
+C:\Users\SAMY\source\repos\obj\Debug\MainWindow.baml
+C:\Users\SAMY\source\repos\obj\Debug\DJEMAI-SAMY-PENDU.g.resources
+C:\Users\SAMY\source\repos\obj\Debug\DJEMAI_SAMY_PENDU.Properties.Resources.resources
+C:\Users\SAMY\source\repos\obj\Debug\DJEMAI-SAMY-PENDU.csproj.GenerateResource.cache
+C:\Users\SAMY\source\repos\obj\Debug\DJEMAI-SAMY-PENDU.csproj.CoreCompileInputs.cache
+C:\Users\SAMY\source\repos\obj\Debug\DJEMAI-SAMY-PENDU.exe
+C:\Users\SAMY\source\repos\obj\Debug\DJEMAI-SAMY-PENDU.pdb

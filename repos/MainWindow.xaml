@@ -1,0 +1,124 @@
+﻿<Window x:Class="DJEMAI_SAMY_PENDU.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DJEMAI_SAMY_PENDU"
+        mc:Ignorable="d"
+        Title="Jeu Du Pendu" Height="450" Width="800" Background="White">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="6*" />
+            <RowDefinition Height="2*" />
+            <RowDefinition Height="1*" />
+        </Grid.RowDefinitions>
+
+
+        <Grid x:Name="Grd_Titre" Grid.Row="0">
+            <Label Content="BIENVENUE AU JEU DU PENDU !" FontSize="20" HorizontalContentAlignment="Center" FontFamily="Arial Unicode MS" />
+        </Grid>
+
+
+        <Grid x:Name="Grd_Contenu" Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="4*" />
+                <ColumnDefinition Width="6*" />
+            </Grid.ColumnDefinitions>
+
+
+            <Grid x:Name="Grd_image" Grid.Column="0">
+                <Image x:Name="img_Vie" Source="Images/1.png" Stretch="Uniform" />
+            </Grid>
+
+
+
+            <Grid x:Name="Grd_Touches" Grid.Column="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+
+                <Grid.Resources>
+                    <Style TargetType="{x:Type Button}">
+                        <Setter Property="Margin" Value="-1.5" />
+                        <Setter Property="Background" Value="#FFCABA95" />
+                        <Setter Property="FontSize" Value="30" />
+                        <Setter Property="FontFamily" Value="Tempus Sans ITC"/>
+                        <Setter Property="BorderBrush" Value="Transparent"/>
+                    </Style>
+                </Grid.Resources>
+
+
+                <Button x:Name="BTN_A" Content="A" Grid.Row="0" Grid.Column="0" Click="BTN_Click" />
+                <Button x:Name="BTN_B" Content="B" Grid.Row="0" Grid.Column="1" Click="BTN_Click" />
+                <Button x:Name="BTN_C" Content="C" Grid.Row="0" Grid.Column="2" Click="BTN_Click" />
+                <Button x:Name="BTN_D" Content="D" Grid.Row="0" Grid.Column="3" Click="BTN_Click" />
+
+
+                <Button x:Name="BTN_E" Content="E" Grid.Row="1" Grid.Column="0" Click="BTN_Click"  />
+                <Button x:Name="BTN_F" Content="F" Grid.Row="1" Grid.Column="1" Click="BTN_Click" />
+                <Button x:Name="BTN_G" Content="G" Grid.Row="1" Grid.Column="2" Click="BTN_Click"  />
+                <Button x:Name="BTN_H" Content="H" Grid.Row="1" Grid.Column="3" Click="BTN_Click" />
+
+
+                <Button x:Name="BTN_I" Content="I" Grid.Row="2" Grid.Column="0" Click="BTN_Click" />
+                <Button x:Name="BTN_J" Content="J" Grid.Row="2" Grid.Column="1" Click="BTN_Click" />
+                <Button x:Name="BTN_K" Content="K" Grid.Row="2" Grid.Column="2" Click="BTN_Click" />
+                <Button x:Name="BTN_L" Content="L" Grid.Row="2" Grid.Column="3" Click="BTN_Click" />
+
+
+                <Button x:Name="BTN_M" Content="M" Grid.Row="3" Grid.Column="0" Click="BTN_Click"  />
+                <Button x:Name="BTN_N" Content="N" Grid.Row="3" Grid.Column="1" Click="BTN_Click" />
+                <Button x:Name="BTN_O" Content="O" Grid.Row="3" Grid.Column="2" Click="BTN_Click"  />
+                <Button x:Name="BTN_P" Content="P" Grid.Row="3" Grid.Column="3" Click="BTN_Click" />
+
+
+                <Button x:Name="BTN_Q" Content="Q" Grid.Row="4" Grid.Column="0" Click="BTN_Click" />
+                <Button x:Name="BTN_R" Content="R" Grid.Row="4" Grid.Column="1" Click="BTN_Click" />
+                <Button x:Name="BTN_S" Content="S" Grid.Row="4" Grid.Column="2" Click="BTN_Click"  />
+                <Button x:Name="BTN_T" Content="T" Grid.Row="4" Grid.Column="3" Click="BTN_Click" />
+
+
+                <Button x:Name="BTN_U" Content="U" Grid.Row="5" Grid.Column="0" Click="BTN_Click" />
+                <Button x:Name="BTN_V" Content="V" Grid.Row="5" Grid.Column="1" Click="BTN_Click" />
+                <Button x:Name="BTN_W" Content="W" Grid.Row="5" Grid.Column="2" Click="BTN_Click"  />
+                <Button x:Name="BTN_X" Content="X" Grid.Row="5" Grid.Column="3" Click="BTN_Click" />
+
+
+                <Button x:Name="BTN_Y" Content="Y" Grid.Row="6" Grid.Column="0" Click="BTN_Click"  />
+                <Button x:Name="BTN_Z" Content="Z" Grid.Row="6" Grid.Column="1" Click="BTN_Click"  />
+                <Button x:Name="BTN_VIDE" Content=" " Grid.Row="6" Grid.Column="2"  />
+                <Button x:Name="BTN_VIDEE" Content=" " Grid.Row="6" Grid.Column="3" />
+            </Grid>
+        </Grid>
+
+
+        <Grid x:Name="Grd_Affichage" Grid.Row="2" Background="#FFA55A36">
+            <TextBox x:Name="txt_Display" VerticalAlignment="Center" FontSize="50" IsReadOnly="True" TextAlignment="Center" FontFamily="Tempus Sans ITC" BorderBrush="Transparent" Foreground="Black" Background="#FFA55A36"/>
+        </Grid>
+        
+
+
+        <Grid x:Name="Grd_Footer" Grid.Row="3">
+            <Label Content="V2 Pendu DJEMAI SAMY" FontFamily="Yu Gothic UI"  Background="#FFA55A36" FontSize="8" />
+        </Grid>
+    </Grid>
+
+
+
+
+</Window>
